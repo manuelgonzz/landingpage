@@ -125,9 +125,9 @@ Section Text:       15px/1.7 "Open Sans", arial, sans-serif;
     border-radius: 2px !important;
 }
 
-::-moz-selection{ color: #fff; background:#000; }
-::-webkit-selection{ color: #fff;	background:#000; }
-::selection{ color: #fff;	background:#000; }
+::-moz-selection{ color: #fff; background:#0051a6; }
+::-webkit-selection{ color: #fff;	background:#0051a6; }
+::selection{ color: #fff;	background:#0051a6; }
 
 .animate, .animate *{
 	-webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);  
@@ -358,7 +358,7 @@ body{
 }
 
 a{
-	color: #111;
+	color: #888;
 	text-decoration: underline;
 }
 a:hover{
@@ -1705,7 +1705,7 @@ a.logo:hover{
 .mobile-on .desktop-nav ul{
 	width: 100%;
     float: none;
-	background: rgba(18,18,18, .97);
+	background: rgba(0, 81, 166, 0.95);
     position: relative;
     overflow-x: hidden;
 }
@@ -1868,7 +1868,7 @@ a.logo:hover{
  */
 
 .main-nav.dark{
-	background-color: rgba(10,10,10, .95);
+	background-color: rgba(0, 81, 166, .95);;
     
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
@@ -2956,7 +2956,7 @@ a.logo:hover{
 	padding: 20px 23px 55px;
 	font-size: 14px;
     font-weight: 300;
-	color: #777;
+	color: #fff;
 	text-align: center;
 	z-index: 2;
 	
@@ -3006,7 +3006,7 @@ a.logo:hover{
 .team-social-links a{
 	display: inline-block;
 	padding: 3px 7px;
-	color: rgba(0,0,0, .4);
+	color: rgba(255,255,255, .4);
 	
 	-webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);  
     -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
@@ -3019,16 +3019,17 @@ a.logo:hover{
 
 /* Hover state */
 .no-mobile .team-item:hover .team-item-image:after{
-	background: rgba(255,255,255, .93);
+	/* background: rgba(255,255,255, .93); */
+	background: rgba(0, 81, 166, .93);
 }
 .no-mobile .team-item:hover .team-item-detail{
 	opacity: 1;
 }
 .no-mobile .team-item:hover .team-item-descr{	
-	color: #111;
+	color: #0051a6;
 }
 .no-mobile .team-social-links a:hover{
-	color: rgba(0,0,0, .75);
+	color: rgba(255,255,255, .75);
 }
 
 /* Mobile touch */
@@ -3473,10 +3474,10 @@ a.logo:hover{
 .works-grid.hover-white .work-item:hover .work-intro,
 .works-grid.hover-white .work-item:hover .work-title,
 .works-grid.hover-white .work-item:hover .work-descr{
-	color: #000;
+	color: #fff;
 }
 .works-grid.hover-white .work-item:hover .work-img:after{	
-	background: rgba(250,250,250, .9);
+	background: rgba(0, 81, 166, .9);
 }
 
 .work-item .work-img > img{
