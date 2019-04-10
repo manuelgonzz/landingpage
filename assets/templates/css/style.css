@@ -173,7 +173,8 @@ Section Text:       15px/1.7 "Open Sans", arial, sans-serif;
 
 ::selection {
     color: #fff;
-    background: rgba(0, 81, 166, 0.55);
+    background: #555
+    /* background: rgba(0, 81, 166, 0.55); */
 }
 
 .animate, .animate * {
@@ -2422,7 +2423,8 @@ hr.black {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 120px 0;
+    /* padding: 120px 0; */
+    padding: 75px 0;
 }
 
 .small-section {
