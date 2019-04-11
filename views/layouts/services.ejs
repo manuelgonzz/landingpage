@@ -8,100 +8,85 @@
 
         <!-- Nav tabs -->
         <ul class="nav nav-tabs tpl-alt-tabs font-alt pt-30 pt-sm-0 pb-30 pb-sm-0">
+
+            <% navtabs.tabs.forEach(function(bar, index){ %>
+
+            <% if (index==0) { %>
             <li class="active">
-                <a href="#service-branding" data-toggle="tab">
+                <a href='<%= bar.tag %>' data-toggle="tab">
 
                     <div class="alt-tabs-icon">
-                        <span class="icon-strategy"></span>
+                        <span class='<%= bar.icon %>'></span>
                     </div>
-
-                    Branding
+                    <%= bar.tittle %>
                 </a>
             </li>
+            <% } else { %>
             <li>
-                <a href="#service-web-design" data-toggle="tab">
+                <a href='<%= bar.tag %>' data-toggle="tab">
 
                     <div class="alt-tabs-icon">
-                        <span class="icon-desktop"></span>
+                        <span class='<%= bar.icon %>'></span>
                     </div>
-
-                    Web Design
+                    <%= bar.tittle %>
                 </a>
             </li>
-            <li>
-                <a href="#service-graphic" data-toggle="tab">
+            <% } %>
+            <% }); %>
 
-                    <div class="alt-tabs-icon">
-                        <span class="icon-tools"></span>
-                    </div>
-
-                    Graphic Design
-                </a>
-            </li>
-            <li>
-                <a href="#service-development" data-toggle="tab">
-
-                    <div class="alt-tabs-icon">
-                        <span class="icon-gears"></span>
-                    </div>
-
-                    Development
-                </a>
-            </li>
-            <li>
-                <a href="#service-photography" data-toggle="tab">
-
-                    <div class="alt-tabs-icon">
-                        <span class="icon-camera"></span>
-                    </div>
-
-                    Photography
-                </a>
-            </li>
+            <!-- End Nav tabs -->
         </ul>
-        <!-- End Nav tabs -->
 
         <!-- Tab panes -->
         <div class="tab-content tpl-tabs-cont">
-
+            <% navtabs.sections.forEach(function(section, index){ %>
+            <% if (index==0) { %>
             <!-- Service Item -->
-            <div class="tab-pane fade in active" id="service-branding">
-
+            <div class="tab-pane fade in active" id='<%= section.tag %>'>
                 <div class="section-text">
                     <div class="row">
                         <div class="col-md-4 mb-md-40 mb-xs-30">
                             <blockquote class="mb-0">
-                                <p>
-                                    A&nbsp;brand for a&nbsp;company is&nbsp;like a&nbsp;reputation
-                                    for a&nbsp;person. You earn reputation by&nbsp;trying to&nbsp;do&nbsp;hard
-                                    things well.
-                                </p>
-                                <footer>
-                                    Jeff Bezos
-                                </footer>
+                                <p> <%= section.quote.blockquote %> </p>
+                                <footer> <%= section.quote.author %> </footer>
                             </blockquote>
                         </div>
                         <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
-                            Maecenas volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur
-                            fermentum
-                            volutpat nibh, accumsan purus. Lorem ipsum dolor sit semper amet, consectetur
-                            adipiscing elit.
-                            In maximus ligula metus pellentesque mattis.
+                            <%= section.paragraphOne %>
                         </div>
                         <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
-                            Donec vel ultricies purus. Nam dictum sem, ipsum aliquam . Etiam sit amet fringilla
-                            lacus.
-                            Pellentesque suscipit ante at ullamcorper pulvinar neque porttitor. Integer lectus.
-                            Praesent sed nisi eleifend, fermentum orci amet, iaculis libero.
+                            <%= section.paragraphTwo %>
                         </div>
                     </div>
                 </div>
-
             </div>
             <!-- End Service Item -->
+            <% } else { %>
+            <!-- Service Item -->
+            <div class="tab-pane fade" id='<%= section.tag %>'>
+                <div class="section-text">
+                    <div class="row">
+                        <div class="col-md-4 mb-md-40 mb-xs-30">
+                            <blockquote class="mb-0">
+                                <p> <%= section.quote.blockquote %> </p>
+                                <footer> <%= section.quote.author %> </footer>
+                            </blockquote>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
+                            <%= section.paragraphOne %>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
+                            <%= section.paragraphTwo %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Service Item -->
+            <% } %>
+            <% }); %>
 
             <!-- Service Item -->
-            <div class="tab-pane fade" id="service-web-design">
+            <!-- <div class="tab-pane fade" id="service-web-design">
 
                 <div class="section-text">
                     <div class="row">
@@ -133,11 +118,11 @@
                     </div>
                 </div>
 
-            </div>
+            </div> -->
             <!-- End Service Item -->
 
             <!-- Service Item -->
-            <div class="tab-pane fade" id="service-graphic">
+            <!-- <div class="tab-pane fade" id="service-graphic">
 
                 <div class="section-text">
                     <div class="row">
@@ -171,11 +156,11 @@
                     </div>
                 </div>
 
-            </div>
+            </div> -->
             <!-- End Service Item -->
 
             <!-- Service Item -->
-            <div class="tab-pane fade" id="service-development">
+            <!-- <div class="tab-pane fade" id="service-development">
 
                 <div class="section-text">
                     <div class="row">
@@ -207,11 +192,11 @@
                     </div>
                 </div>
 
-            </div>
+            </div> -->
             <!-- End Service Item -->
 
             <!-- Service Item -->
-            <div class="tab-pane fade" id="service-photography">
+            <!-- <div class="tab-pane fade" id="service-photography">
 
                 <div class="section-text">
                     <div class="row">
@@ -243,7 +228,7 @@
                     </div>
                 </div>
 
-            </div>
+            </div> -->
             <!-- End Service Item -->
 
         </div>
