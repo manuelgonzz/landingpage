@@ -1,35 +1,29 @@
 <!-- Newsletter Section -->
 <section class="small-section bg-gray-lighter">
     <div class="container relative">
+        <div class="item-carousel">
+            <% partners.forEach(function(partner, index){ %>
+            <div class="col-sm-8 wow fadeInUp" data-wow-delay='1.<%= index %>s'>
+                <div class="team-item">
 
-        <form class="form align-center" id="mailchimp">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
+                    <div class="team-item-image partner-image">
 
-                    <div class="newsletter-label font-alt">
-                        Stay informed with our newsletter
+                        <img src="<%= partner.picture %>" alt="" />
+
+                        <div class="team-item-detail no-padding">
+
+                            <h4 class="font-alt normal"><%= partner.name %></h4>
+
+                            <p>
+                                <%= partner.description %>
+                            </p>
+                        </div>
                     </div>
-
-                    <div class="mb-20">
-                        <input placeholder="Enter Your Email"
-                            class="newsletter-field form-control input-md round mb-xs-10" type="email"
-                            pattern=".{5,100}" required />
-
-                        <button type="submit" class="btn btn-mod btn-medium btn-round mb-xs-10">
-                            Subscribe
-                        </button>
-                    </div>
-
-                    <div class="form-tip">
-                        <i class="fa fa-info-circle"></i> Please trust us, we will never send you spam
-                    </div>
-
-                    <div id="subscribe-result"></div>
 
                 </div>
             </div>
-        </form>
-
+            <% }); %>
+        </div>
     </div>
 </section>
 <!-- End Newsletter Section -->

@@ -2993,6 +2993,10 @@ hr.black {
     transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
 }
 
+.no-padding {
+    padding: 0px !important;
+}
+
 .team-item-detail {
     opacity: 0;
     width: 100%;
@@ -3778,9 +3782,17 @@ hr.black {
 }
 
 .banner-image {
-    margin: -40px 0 0 0;
+    margin: 130px 0 0 0;
     text-align: right;
 }
+
+.partner-image {
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.partner-image img {}
 
 .banner-image img {}
 
