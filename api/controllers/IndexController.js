@@ -7,7 +7,24 @@
 
 module.exports = {
     index: function (req, res) {
-        let sliderInfo = [{ h1Text: "Amazing Design", h2Text: "Create your dream with", image: "/images/slide/code_alone.jpg" }];
+        let sliderInfo = [
+            {
+                h1Text: "Us", 
+                h2Text: "Develop your ideas with", 
+                image: "/images/slide/slide_glass_code.jpg"
+            },
+            {
+                h1Text: "Bussiness", 
+                h2Text: "We innovate your", 
+                image: "/images/full-width-images/mechanic_keyboard.jpg"
+            },
+            {
+                h1Text: "Amazing People", 
+                h2Text: "Create amazing products with", 
+                image: "/images/slide/code_alone.jpg"
+            },
+        ];
+
         let team = [
             {
                 greeting: "Hello!",
@@ -47,6 +64,7 @@ module.exports = {
                 ]
             }
         ];
+
         let navtabs = {
             tabs: [
                 { tittle: "Web Development", icon: "icon-desktop", tag: "#service-webdevelopment" },
@@ -158,7 +176,13 @@ module.exports = {
                 picture: "https://media.licdn.com/dms/image/C4D0BAQGOw0k89Qdsfg/company-logo_200_200/0?e=2159024400&v=beta&t=AnG0L-QlSR6IhEsdhvvlm5PbCiAptrVxyBCUEpIRamg",
             },
         ];
-        return res.view('pages/homepage', { sliderInfo, team, navtabs, portfolio, features, partners });
+        
+        let contact = {
+            phone:"xxx.xxx.xxxx",
+            address:"xxxx.xxxx.xxxx.xxxx",
+            email:"devincoderd@gmail.com"
+        }
+        return res.view('pages/homepage', { sliderInfo, team, navtabs, portfolio, features, partners, contact });
     }
 };
 
