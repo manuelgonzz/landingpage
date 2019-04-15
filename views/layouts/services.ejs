@@ -59,6 +59,9 @@
                         </div>
                     </div>
                 </div>
+                <% if (section.pricing) { %>
+                <%- partial(section.pricing) %>
+                <% } %>
             </div>
             <!-- End Service Item -->
             <% } else { %>
@@ -80,6 +83,9 @@
                         </div>
                     </div>
                 </div>
+                <% if (section.pricing) { %>
+                <%- partial(section.pricing, {stacks: section.stacks}) %>
+                <% } %>
             </div>
             <!-- End Service Item -->
             <% } %>

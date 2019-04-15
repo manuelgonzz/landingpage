@@ -9,18 +9,18 @@ module.exports = {
     index: function (req, res) {
         let sliderInfo = [
             {
-                h1Text: "Us", 
-                h2Text: "Develop your ideas with", 
+                h1Text: "Us",
+                h2Text: "Develop your ideas with",
                 image: "/images/slide/slide_glass_code.jpg"
             },
             {
-                h1Text: "Bussiness", 
-                h2Text: "We innovate your", 
+                h1Text: "Bussiness",
+                h2Text: "We innovate your",
                 image: "/images/full-width-images/mechanic_keyboard.jpg"
             },
             {
-                h1Text: "Amazing People", 
-                h2Text: "Create amazing products with", 
+                h1Text: "Amazing People",
+                h2Text: "Create amazing products with",
                 image: "/images/slide/code_alone.jpg"
             },
         ];
@@ -110,7 +110,46 @@ module.exports = {
                     },
                     paragraphOne: "pOne",
                     paragraphTwo: "pTwo",
-                    tag: "service-cloudservices"
+                    tag: "service-cloudservices",
+                    pricing: "../layouts/cloud_pricing.ejs",
+                    stacks: [
+                        {
+                            tittle: "Start",
+                            icon:"fa fa-paper-plane-o",
+                            list: [
+                                "1 Gb Storage",
+                                "3 Domain Names",
+                                "5 FTP Users",
+                                "Free Support"
+                            ],
+                            value: "199",
+                            frequency: "per month"
+                        },
+                        {
+                            tittle: "Standard",
+                            icon:"fa fa-gift",
+                            list: [
+                                "3 Gb Storage",
+                                "5 Domain Names",
+                                "7 FTP Users",
+                                "Free Support"
+                            ],
+                            value: "239",
+                            frequency: "per month"
+                        },
+                        {
+                            tittle: "Optima",
+                            icon:"fa fa-desktop",
+                            list: [
+                                "5 Gb Storage",
+                                "9 Domain Names",
+                                "15 FTP Users",
+                                "Free Support"
+                            ],
+                            value: "399",
+                            frequency: "per month"
+                        },
+                    ]
 
                 },
             ]
@@ -176,11 +215,11 @@ module.exports = {
                 picture: "https://media.licdn.com/dms/image/C4D0BAQGOw0k89Qdsfg/company-logo_200_200/0?e=2159024400&v=beta&t=AnG0L-QlSR6IhEsdhvvlm5PbCiAptrVxyBCUEpIRamg",
             },
         ];
-        
+
         let contact = {
-            phone:"xxx.xxx.xxxx",
-            address:"xxxx.xxxx.xxxx.xxxx",
-            email:"devincoderd@gmail.com"
+            phone: "xxx.xxx.xxxx",
+            address: "xxxx.xxxx.xxxx.xxxx",
+            email: "devincoderd@gmail.com"
         }
         return res.view('pages/homepage', { sliderInfo, team, navtabs, portfolio, features, partners, contact });
     }

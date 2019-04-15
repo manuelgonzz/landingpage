@@ -765,7 +765,8 @@ hr.black {
     background: #0051a6ab;
 }
 
-.btn-mod.btn-w {
+.btn-mod.btn-w.border-colored:hover, .btn-mod.btn-w.border-colored:focus {
+    border: 2px solid #0051a6;
     /* color: #111; */
     /* background: rgba(255,255,255, .8); */
 }
@@ -4828,6 +4829,7 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
     margin: 0 0 30px;
     position: relative;
     text-align: center;
+    color: #0051a6;
 }
 
 .pricing-item-inner {
@@ -4841,11 +4843,11 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
 }
 
 .pricing-item-inner:hover {
-    border-color: #aaa;
+    border-color: #0051a6;
 }
 
 .main .pricing-item-inner {
-    border-color: #aaa;
+    border-color: #0051a6;
 }
 
 .pricing-wrap {
@@ -4879,7 +4881,7 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
 .pr-list {
     margin: 0 -20px 30px;
     padding: 0;
-    color: #777;
+    color: #0051a6;
     font-size: 12px;
     font-weight: 400;
     text-transform: uppercase;
@@ -4919,7 +4921,7 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
 }
 
 .pr-per {
-    color: #999;
+    color: #0051a6;
     font-size: 12px;
 }
 
