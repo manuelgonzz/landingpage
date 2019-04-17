@@ -29,40 +29,58 @@ module.exports = {
             {
                 greeting: "Hello!",
                 postGreeting: "Devin Activo post gretting.",
-                name: "Maximo De Leon",
-                role: "CEO",
-                picture: "/images/team/team-1.jpg",
+                name: "Manuel Gonzalez",
+                role: "SQA Automation Senior",
+                picture: "https://uc8c15ee523b3caea18cc83a0720.previews.dropboxusercontent.com/p/thumb/AAbp0e-xsXgUMknXzwPZMxouIHjsuftHAYVLsl6Epc_A6Bs9UpzgI--adnCw7E99Mdi00BiXi9Rd5gcFeMXW4f5DyNLZf2g1aqdekxo3QPy9qEk5iWGQs2JcF6yKpBgIiluB59gG4idaguKvm0nzvCHl81SJ6o0zknnnQBF2yivAetqfGbYXTGpKGVeRd-nL5uiqpnsQbzTOVgsR3SQNCtU_5QCPhKzCo4RffyZ_SxRrP4zsWT4YhvnaZYzp7PZVwfIY2dLifPAvoZylwt9n-8p_2GU2FSUoYQnCx5ojCuDk352OYHGEvBgC4ciZl4Ju1jk6CXlTO63RvGhIPOuwxhkwAJ3jai1_9vf34cI3OmPXGuktHOfzKQRiSNoKPEc5ja8/p.jpeg?size_mode=5",
                 socials: [
-                    { account: "blablablafacebook.com", icon: "fa fa-facebook" },
-                    { account: "blablablatwitter.com", icon: "fa fa-twitter" },
-                    { account: "blablablatwitter.com", icon: "fa fa-pinterest" }
+                    { account: "https://instagram.com/manuel.gonzz?utm_source=ig_profile_share&igshid=1pvm0u5vvnacv", icon: "fa fa-instagram" },
+                    { account: "https://www.linkedin.com/in/manuel-gonzalez-9b0066b1/", icon: "fa fa-linkedin" }
                 ]
             },
             {
                 greeting: "Hello!",
                 postGreeting: "Devin Activo post gretting.",
-                name: "Eliezer De Leon",
-                role: "CEO",
-                picture: "/images/team/team-1.jpg",
+                name: "Maximo De Leon",
+                role: "Senior Software Engineer",
+                picture: "https://uc523b397b3def57828fc6350d83.previews.dropboxusercontent.com/p/thumb/AAbq92hbxtlyVFx5XU896yze3ToIaP8e2rk5TI1CzjWWj_eY0pz8tGLuhPeS6ZIxdZfcSAhQ5TQ8zDvz8QemIMrRK8Iydr-126avjLTAHQ3AkFWsbyXsRbm09DaHJfMlNJaTZELR67FhGAYWwes9Jm9oL_DmRP9OsM2QCDYTtyw8kdGXiz9x9xCmV5HiHxkJbDamDoaqts-yB8INnhzg2PQoFisE7vc5t4v9c-uM8kM01UH7ZIV9SAR44w_OiozNXrXjGyBTroMr0u0BGPf3KNOthJZThU3AQwWuArSoFl7ik8nT8ef0Alj6I7wJ6hPxBv5JmHIX4I1Bk5pT27ELlthEwE_YelAV1D8e6l4ZnPpqRU2eyRhJGo9J29SlQU0dTLQ/p.jpeg?size_mode=5",
                 socials: [
-                    { account: "blablablafacebook.com", icon: "fa fa-youtube" },
-                    { account: "blablablafacebook.com", icon: "fa fa-facebook" },
-                    { account: "blablablatwitter.com", icon: "fa fa-twitter" },
-                    { account: "blablablatwitter.com", icon: "fa fa-pinterest" }
+                    { account: "https://instagram.com/max_lion?utm_source=ig_profile_share&igshid=1tf5zbsgm0z2k", icon: "fa fa-instagram" },
+                    { account: "https://www.linkedin.com/in/maximo-de-le%C3%B3n-4b614199/", icon: "fa fa-linkedin" }
                 ]
             },
             {
                 greeting: "Hello!",
                 postGreeting: "Devin Activo post gretting.",
                 name: "Edwin Frias",
-                role: "CEO",
-                picture: "/images/team/team-1.jpg",
+                role: "Software Developer",
+                picture: "https://media.licdn.com/dms/image/C5603AQG94epnYPTSMA/profile-displayphoto-shrink_800_800/0?e=1560988800&v=beta&t=3hbrzoMwlbWbqhacq_2vU6DXDGZusDwvBc2AWIAiVtk",
                 socials: [
-                    { account: "blablablafacebook.com", icon: "fa fa-facebook" },
-                    { account: "blablablatwitter.com", icon: "fa fa-twitter" },
-                    { account: "blablablatwitter.com", icon: "fa fa-pinterest" }
+                    { account: "https://instagram.com/ing.edwinfrias?utm_source=ig_profile_share&igshid=etmy2c021hqb", icon: "fa fa-instagram" },
+                    { account: "https://www.linkedin.com/in/ing-edwin-frias-marte-0b580938/", icon: "fa fa-linkedin" }
                 ]
-            }
+            },
+            {
+                greeting: "Hello!",
+                postGreeting: "Devin Activo post gretting.",
+                name: "Eliezer De Leon",
+                role: "Software Developer",
+                picture: "https://media.licdn.com/dms/image/C5603AQFOu-ySQR5zfQ/profile-displayphoto-shrink_800_800/0?e=1560988800&v=beta&t=FfzbXBx3Lhv0ZNxT0BCEJPqLZqZWH1AeqXkMgBQM9eI",
+                socials: [
+                    { account: "https://instagram.com/eliezer.deleon?utm_source=ig_profile_share&igshid=i05iinh0li23", icon: "fa fa-instagram" },
+                    { account: "https://www.linkedin.com/in/eliezer-de-le%C3%B3n-106964159/", icon: "fa fa-linkedin" }
+                ]
+            },
+            {
+                greeting: "Hello!",
+                postGreeting: "Devin Activo post gretting.",
+                name: "Johnny Gil",
+                role: "Senior Mobile Developer",
+                picture: "https://media.licdn.com/dms/image/C5603AQEomupXGC5XCg/profile-displayphoto-shrink_800_800/0?e=1560988800&v=beta&t=I1Qby1mtJzMBsMIaT6ycEPS7Gc5CcsE6cKKIfrUISeM",
+                socials: [
+                    { account: "https://instagram.com/johnngil?utm_source=ig_profile_share&igshid=g9nngbrceitf", icon: "fa fa-instagram" },
+                    { account: "https://www.linkedin.com/in/johnny-gil-mejia-529582b9/", icon: "fa fa-linkedin" }
+                ]
+            },
         ];
 
         let navtabs = {
@@ -115,7 +133,7 @@ module.exports = {
                     stacks: [
                         {
                             tittle: "Start",
-                            icon:"fa fa-paper-plane-o",
+                            icon: "fa fa-paper-plane-o",
                             list: [
                                 "1 Gb Storage",
                                 "3 Domain Names",
@@ -127,7 +145,7 @@ module.exports = {
                         },
                         {
                             tittle: "Standard",
-                            icon:"fa fa-gift",
+                            icon: "fa fa-gift",
                             list: [
                                 "3 Gb Storage",
                                 "5 Domain Names",
@@ -139,7 +157,7 @@ module.exports = {
                         },
                         {
                             tittle: "Optima",
-                            icon:"fa fa-desktop",
+                            icon: "fa fa-desktop",
                             list: [
                                 "5 Gb Storage",
                                 "9 Domain Names",
