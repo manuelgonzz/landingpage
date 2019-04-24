@@ -275,7 +275,41 @@ module.exports = {
             address: "xxxx.xxxx.xxxx.xxxx",
             email: "devincoderd@gmail.com"
         }
-        return res.view('pages/homepage', { sliderInfo, team, navtabs, portfolio, features, partners, contact });
+
+        let products = [
+            {
+                name:"Warehause App",
+                description:"",
+                tag:"warehause",
+                pictures:["images/portfolio/full-project-1.jpg", "images/portfolio/full-project-2.jpg"],
+                pricing: "../layouts/cloud_pricing.ejs",
+                stacks:[
+                    {
+                        tittle:"Basic",
+                        icon: "fa fa-paper-plane-o",
+                        list:["Inventory","Billing", "Security", "Receivables"],
+                        value:"",
+                        frequency:""
+                    },
+                    {
+                        tittle:"Intermediate",
+                        icon: "fa fa-paper-plane-o",
+                        list:["Inventory","Billing", "Security", "Receivables", "Accounts Payable", "Petty Cash"],
+                        value:"",
+                        frequency:""
+                    },
+                    {
+                        tittle:"Advanced",
+                        icon: "fa fa-paper-plane-o",
+                        list:["Inventory","Billing", "Security", "Receivables", "Accounts Payable", "Petty Cash", "User Management", "Bank"],
+                        value:"",
+                        frequency:""
+                    },
+                ]
+            }
+        ];
+
+        return res.view('pages/homepage', { sliderInfo, team, navtabs, portfolio, features, partners, contact, products });
     }
 };
 
