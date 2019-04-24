@@ -135,36 +135,72 @@ module.exports = {
                             tittle: "Start",
                             icon: "fa fa-paper-plane-o",
                             list: [
-                                "1 Gb Storage",
-                                "3 Domain Names",
-                                "5 FTP Users",
-                                "Free Support"
+                                "8 GB of Memory",
+                                "2 vCPU's",
+                                "25 GB SSD Disk",
+                                "4 TB of Transfer"
                             ],
-                            value: "199",
+                            value: "63",
                             frequency: "per month"
                         },
                         {
-                            tittle: "Standard",
-                            icon: "fa fa-gift",
+                            tittle: "Start",
+                            icon: "fa fa-paper-plane-o",
                             list: [
-                                "3 Gb Storage",
-                                "5 Domain Names",
-                                "7 FTP Users",
-                                "Free Support"
+                                "16 GB of Memory",
+                                "4 vCPU's",
+                                "50 GB SSD Disk",
+                                "5 TB of Transfer"
                             ],
-                            value: "239",
+                            value: "125",
                             frequency: "per month"
                         },
                         {
-                            tittle: "Optima",
-                            icon: "fa fa-desktop",
+                            tittle: "Start",
+                            icon: "fa fa-paper-plane-o",
                             list: [
-                                "5 Gb Storage",
-                                "9 Domain Names",
-                                "15 FTP Users",
-                                "Free Support"
+                                "32 Gb of Memory",
+                                "8 vCPU's",
+                                "100 GB SSD Disk",
+                                "6 TB of Transfer"
                             ],
-                            value: "399",
+                            value: "248",
+                            frequency: "per month"
+                        },
+                        {
+                            tittle: "Start",
+                            icon: "fa fa-paper-plane-o",
+                            list: [
+                                "64 GB of Memory",
+                                "16 vCPU's",
+                                "200 GB SSD Disk",
+                                "7 TB of Transfer"
+                            ],
+                            value: "490",
+                            frequency: "per month"
+                        },
+                        {
+                            tittle: "Start",
+                            icon: "fa fa-paper-plane-o",
+                            list: [
+                                "128 Gb of Memory",
+                                "32 vCPU's",
+                                "400 SSD Disk",
+                                "8 TB of Transfer"
+                            ],
+                            value: "1000",
+                            frequency: "per month"
+                        },
+                        {
+                            tittle: "Start",
+                            icon: "fa fa-paper-plane-o",
+                            list: [
+                                "160 GB of Memory",
+                                "40 vCPU's",
+                                "500 GB SSD Disk",
+                                "9 TB of Transfer"
+                            ],
+                            value: "1280",
                             frequency: "per month"
                         },
                     ]
