@@ -31,7 +31,7 @@ module.exports = {
                 postGreeting: "Devin Activo post gretting.",
                 name: "Manuel Gonzalez",
                 role: "SQA Automation Senior",
-                picture: "https://uc8c15ee523b3caea18cc83a0720.previews.dropboxusercontent.com/p/thumb/AAbp0e-xsXgUMknXzwPZMxouIHjsuftHAYVLsl6Epc_A6Bs9UpzgI--adnCw7E99Mdi00BiXi9Rd5gcFeMXW4f5DyNLZf2g1aqdekxo3QPy9qEk5iWGQs2JcF6yKpBgIiluB59gG4idaguKvm0nzvCHl81SJ6o0zknnnQBF2yivAetqfGbYXTGpKGVeRd-nL5uiqpnsQbzTOVgsR3SQNCtU_5QCPhKzCo4RffyZ_SxRrP4zsWT4YhvnaZYzp7PZVwfIY2dLifPAvoZylwt9n-8p_2GU2FSUoYQnCx5ojCuDk352OYHGEvBgC4ciZl4Ju1jk6CXlTO63RvGhIPOuwxhkwAJ3jai1_9vf34cI3OmPXGuktHOfzKQRiSNoKPEc5ja8/p.jpeg?size_mode=5",
+                picture: "https://previews.dropbox.com/p/thumb/AAYhsDaku5lYblPJ1XaqR1Cm95YR1-e8phbXSmoTRT0KJ-i8V133k_qNC7nXVeyCORNatQ6r7wGZuK_DPppIUHgzwvLl5JuvoiYoS8oP5CEB4OxYEU_xGpYxQapYInYK5jtfFJEQemRN7vbscvLTqWhRS0-oSpC8Y05Gz55f8rEL3AQyw-cnHaPt5DdeBW-IoSBxE5sihkoA-R7lK3bBdA2Ow3dlQHDYgafmtE7AegiGR27OweTF26OjUbQxWncrFmj7nfdtLf4FxAqyWk8acxMO129uSAHug68oj4as0MUjMwhH9pPy54wn-mYQCU2TDdV5opO0i3ySuNksA0rA0tOH/p.jpeg?size_mode=5",
                 socials: [
                     { account: "https://instagram.com/manuel.gonzz?utm_source=ig_profile_share&igshid=1pvm0u5vvnacv", icon: "fa fa-instagram" },
                     { account: "https://www.linkedin.com/in/manuel-gonzalez-9b0066b1/", icon: "fa fa-linkedin" }
@@ -42,7 +42,7 @@ module.exports = {
                 postGreeting: "Devin Activo post gretting.",
                 name: "Maximo De Leon",
                 role: "Senior Software Engineer",
-                picture: "https://uc523b397b3def57828fc6350d83.previews.dropboxusercontent.com/p/thumb/AAbq92hbxtlyVFx5XU896yze3ToIaP8e2rk5TI1CzjWWj_eY0pz8tGLuhPeS6ZIxdZfcSAhQ5TQ8zDvz8QemIMrRK8Iydr-126avjLTAHQ3AkFWsbyXsRbm09DaHJfMlNJaTZELR67FhGAYWwes9Jm9oL_DmRP9OsM2QCDYTtyw8kdGXiz9x9xCmV5HiHxkJbDamDoaqts-yB8INnhzg2PQoFisE7vc5t4v9c-uM8kM01UH7ZIV9SAR44w_OiozNXrXjGyBTroMr0u0BGPf3KNOthJZThU3AQwWuArSoFl7ik8nT8ef0Alj6I7wJ6hPxBv5JmHIX4I1Bk5pT27ELlthEwE_YelAV1D8e6l4ZnPpqRU2eyRhJGo9J29SlQU0dTLQ/p.jpeg?size_mode=5",
+                picture: "https://previews.dropbox.com/p/thumb/AAZ8YGdNu64P7BvqDiWVPUVM3HRhHGaWiBKviOhZ6IRyDB4UXqDiFhlHmOeykOb1zpxlR5hLdx7H6novZa18xrcPYFHicp7FP_jMe6cQ_iJHOkmbqcdJUyyOXWpHA7RBC3PRdju4F6czcFIe5giNc7d_1EqQUzxwhD3PhCLvCRlNco2UGekHtTGUfoZI6b9kxZVOea3tkAt559h-0x_4vXu0Z02PCNVTvf5CNUXhHmTD6AHNZXL4xWV32nq9py8-QQ5elFIi8zUFiTMF5R8vPSSX4JEdEgokxrWx6L8cWCpWnUpLg6ykq5_KHZCJRkx1IjpVlUJuNuudkI0_pSK-5mMA/p.jpeg?size_mode=5",
                 socials: [
                     { account: "https://instagram.com/max_lion?utm_source=ig_profile_share&igshid=1tf5zbsgm0z2k", icon: "fa fa-instagram" },
                     { account: "https://www.linkedin.com/in/maximo-de-le%C3%B3n-4b614199/", icon: "fa fa-linkedin" }
@@ -286,7 +286,7 @@ module.exports = {
                 stacks:[
                     {
                         tittle:"Basic",
-                        icon: "fa fa-paper-plane-o",
+                        icon: "fa fa-leaf",
                         list:["Inventory","Billing", "Security", "Receivables"],
                         value:"",
                         frequency:""
@@ -300,13 +300,13 @@ module.exports = {
                     },
                     {
                         tittle:"Advanced",
-                        icon: "fa fa-paper-plane-o",
+                        icon: "fa fa-fighter-jet",
                         list:["Inventory","Billing", "Security", "Receivables", "Accounts Payable", "Petty Cash", "User Management", "Bank"],
                         value:"",
                         frequency:""
                     },
                 ]
-            }
+            },
         ];
 
         return res.view('pages/homepage', { sliderInfo, team, navtabs, portfolio, features, partners, contact, products });

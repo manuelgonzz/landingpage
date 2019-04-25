@@ -6,102 +6,144 @@
             Products
         </h2>
 
+        <% products.forEach(function(product, index, arry){ %>
         <!-- Section -->
-        <section class="page-section">
-            <div class="container relative">
-
-                <% products.forEach(function(product, index){ %>
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs tpl-alt-tabs font-alt pb-15 pb-sm-0">
-                    <li class="active">
-                        <a href='#<%= product.tag %>-details' data-toggle="tab">
-
-                            <div class="alt-tabs-icon">
-                                <i class="fa fa-rocket" aria-hidden="true"></i>
-                            </div>
-
-                            App Details
-                        </a>
-                    </li>
-                    <li>
-                        <a href='#<%= product.tag %>-pricing' data-toggle="tab">
-
-                            <div class="alt-tabs-icon">
-                                <i class="fa fa-usd" aria-hidden="true"></i>
-                            </div>
-
-                            Pricing
-                        </a>
-                    </li>
-                </ul>
-                <!-- End Nav tabs -->
-
-                <!-- Tab Content -->
-                <div class="tab-content tpl-tabs-cont">
-
-                    <!-- Detail Section -->
-                    <div class="tab-pane fade in active" id='<%= product.tag %>-details'>
-                        <div class="row">
-
-                            <div class="col-md-7 mb-sm-40">
-
-                                <!-- Gallery -->
-                                <div class="work-full-media mt-0 white-shadow">
-                                    <ul class="clearlist work-full-slider owl-carousel">
-                                        <li>
-                                            <img src="images/portfolio/full-project-1.jpg" alt="" />
-                                        </li>
-                                        <li>
-                                            <img src="images/portfolio/full-project-2.jpg" alt="" />
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- End Gallery -->
-
-                            </div>
-
-                            <div class="col-md-5 col-lg-4 col-lg-offset-1">
+        <section>
+            <!-- <div class="row"> -->
 
 
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs tpl-alt-tabs font-alt pb-15 pb-sm-0">
+                <li class="active">
+                    <a href='#<%= product.tag %>-details' data-toggle="tab">
 
-                                <!-- About Project -->
-                                <div class="text">
-
-                                    <h3 class="font-alt mb-30 mb-xxs-10"><%= product.name %></h3>
-
-                                    <p>
-                                        <%= product.description %>
-                                    </p>
-
-                                    <div class="mt-40">
-                                        <a href="#" class="btn btn-mod btn-border btn-round btn-medium"
-                                            target="_blank">View
-                                            online</a>
-                                    </div>
-
-                                </div>
-                                <!-- End About Project -->
-
-                            </div>
+                        <div class="alt-tabs-icon">
+                            <i class="fa fa-rocket" aria-hidden="true"></i>
                         </div>
-                    </div>
-                    <!-- End Detail Section -->
 
-                    <% if (product.pricing) { %>
-                    <!-- Pricing Section -->
-                    <div class="tab-pane fade" id="<%= product.tag %>-pricing">
-                        <%- partial(product.pricing, {stacks: product.stacks}) %>
-                    </div>
-                    <!-- End Pricing Section -->
-                    <% } %>
+                        App Details
+                    </a>
+                </li>
+                <li>
+                    <a href='#<%= product.tag %>-pricing' data-toggle="tab">
 
+                        <div class="alt-tabs-icon">
+                            <i class="fa fa-usd" aria-hidden="true"></i>
+                        </div>
+
+                        Pricing
+                    </a>
+                </li>
+            </ul>
+            <!-- End Nav tabs -->
+
+            <!-- Tab Content -->
+            <div class="tab-content tpl-tabs-cont">
+
+                <!-- Detail Section -->
+                <div class="tab-pane fade in active" id='<%= product.tag %>-details'>
+                    <div class="row">
+
+                        <% if((index % 2)==0){%>
+
+                        <div class="col-md-7 mb-sm-40">
+                            <!-- Gallery -->
+                            <div class="work-full-media mt-0 white-shadow">
+                                <ul class="clearlist work-full-slider owl-carousel">
+                                    <li>
+                                        <img src="images/portfolio/full-project-1.jpg" alt="" />
+                                    </li>
+                                    <li>
+                                        <img src="images/portfolio/full-project-2.jpg" alt="" />
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End Gallery -->
+
+                        </div>
+
+                        <div class="col-md-5 col-lg-4 col-lg-offset-1">
+                            <!-- About Project -->
+                            <div class="text">
+
+                                <h3 class="font-alt mb-30 mb-xxs-10"><%= product.name %></h3>
+
+                                <p>
+                                    <%= product.description %>
+                                </p>
+
+                                <div class="mt-40">
+                                    <a href="#" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">View
+                                        online</a>
+                                </div>
+
+                            </div>
+                            <!-- End About Project -->
+
+                        </div>
+                        <%} else {%>
+
+                        <div class="col-md-5 col-lg-4 mb-sm-40">
+                            <!-- About Project -->
+                            <div class="text">
+
+                                <h3 class="font-alt mb-30 mb-xxs-10"><%= product.name %></h3>
+
+                                <p>
+                                    <%= product.description %>
+                                </p>
+
+                                <div class="mt-40">
+                                    <a href="#" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">View
+                                        online</a>
+                                </div>
+
+                            </div>
+                            <!-- End About Project -->
+
+                        </div>
+
+                        <div class="col-md-7 col-lg-offset-1">
+                            <!-- Gallery -->
+                            <div class="work-full-media mt-0 white-shadow">
+                                <ul class="clearlist work-full-slider owl-carousel">
+                                    <li>
+                                        <img src="images/portfolio/full-project-1.jpg" alt="" />
+                                    </li>
+                                    <li>
+                                        <img src="images/portfolio/full-project-2.jpg" alt="" />
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End Gallery -->
+
+                        </div>
+
+                        <%}%>
+                    </div>
                 </div>
-                <!-- End Tab Content -->
+                <!-- End Detail Section -->
 
-                <% }); %>
+                <% if (product.pricing) { %>
+                        <!-- Pricing Section -->
+                        <div class="tab-pane fade" id="<%= product.tag %>-pricing">
+                            <%- partial(product.pricing, {stacks: product.stacks}) %>
+                        </div>
+                        <!-- End Pricing Section -->
+                        <% } %>
 
-            </div>
+                    </div>
+                    <!-- End Tab Content -->
+
+                    <!-- </div> -->
         </section>
+
+        <% if(index!=(arry.length-1)){%>
+        <!-- Divider -->
+        <hr class="mt-0 mb-0 " />
+        <!-- End Divider -->
+        <% } %>
+        <% }); %>
         <!-- End Section -->
     </div>
 </section>

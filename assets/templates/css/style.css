@@ -3639,7 +3639,7 @@ hr.black {
 }
 
 .work-navigation a, .work-navigation a:visited {
-    color: #555;
+    color: rgb(247, 8, 8);
 }
 
 .work-navigation a:hover {
@@ -4956,7 +4956,7 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
     line-height: 105px;
     font-size: 16px;
     text-align: center;
-    color: #111;
+    color: #fff;
     z-index: 6;
     -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
     -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
@@ -4981,7 +4981,7 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
     position: absolute;
     top: 17px;
     left: 0;
-    background: #fff;
+    background: rgba(0, 81, 166, .9);
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
