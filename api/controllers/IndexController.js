@@ -31,7 +31,7 @@ module.exports = {
                 postGreeting: "Devin Activo post gretting.",
                 name: "Manuel Gonzalez",
                 role: "SQA Automation Senior",
-                picture: "https://previews.dropbox.com/p/thumb/AAYhsDaku5lYblPJ1XaqR1Cm95YR1-e8phbXSmoTRT0KJ-i8V133k_qNC7nXVeyCORNatQ6r7wGZuK_DPppIUHgzwvLl5JuvoiYoS8oP5CEB4OxYEU_xGpYxQapYInYK5jtfFJEQemRN7vbscvLTqWhRS0-oSpC8Y05Gz55f8rEL3AQyw-cnHaPt5DdeBW-IoSBxE5sihkoA-R7lK3bBdA2Ow3dlQHDYgafmtE7AegiGR27OweTF26OjUbQxWncrFmj7nfdtLf4FxAqyWk8acxMO129uSAHug68oj4as0MUjMwhH9pPy54wn-mYQCU2TDdV5opO0i3ySuNksA0rA0tOH/p.jpeg?size_mode=5",
+                picture: "",
                 socials: [
                     { account: "https://instagram.com/manuel.gonzz?utm_source=ig_profile_share&igshid=1pvm0u5vvnacv", icon: "fa fa-instagram" },
                     { account: "https://www.linkedin.com/in/manuel-gonzalez-9b0066b1/", icon: "fa fa-linkedin" }
@@ -42,7 +42,7 @@ module.exports = {
                 postGreeting: "Devin Activo post gretting.",
                 name: "Maximo De Leon",
                 role: "Senior Software Engineer",
-                picture: "https://previews.dropbox.com/p/thumb/AAZ8YGdNu64P7BvqDiWVPUVM3HRhHGaWiBKviOhZ6IRyDB4UXqDiFhlHmOeykOb1zpxlR5hLdx7H6novZa18xrcPYFHicp7FP_jMe6cQ_iJHOkmbqcdJUyyOXWpHA7RBC3PRdju4F6czcFIe5giNc7d_1EqQUzxwhD3PhCLvCRlNco2UGekHtTGUfoZI6b9kxZVOea3tkAt559h-0x_4vXu0Z02PCNVTvf5CNUXhHmTD6AHNZXL4xWV32nq9py8-QQ5elFIi8zUFiTMF5R8vPSSX4JEdEgokxrWx6L8cWCpWnUpLg6ykq5_KHZCJRkx1IjpVlUJuNuudkI0_pSK-5mMA/p.jpeg?size_mode=5",
+                picture: "",
                 socials: [
                     { account: "https://instagram.com/max_lion?utm_source=ig_profile_share&igshid=1tf5zbsgm0z2k", icon: "fa fa-instagram" },
                     { account: "https://www.linkedin.com/in/maximo-de-le%C3%B3n-4b614199/", icon: "fa fa-linkedin" }
@@ -213,28 +213,28 @@ module.exports = {
             {
                 section: "service-webdevelopment",
                 thumpnail: "",
-                fullpicture: "https://udemy-images.udemy.com/course/750x422/11174_cbb1_116.jpg",
+                fullpicture: "",
                 name: "WorkName",
                 client: "WorkClient"
             },
             {
                 section: "service-webdesign",
                 thumpnail: "",
-                fullpicture: "https://blog.hubspot.com/hs-fs/hub/53/file-2542784971-jpeg/web-design.jpeg",
+                fullpicture: "",
                 name: "WorkName",
                 client: "WorkClient"
             },
             {
                 section: "service-mobiledevelopment",
                 thumpnail: "",
-                fullpicture: "https://mk0buildfireqbf86ll2.kinstacdn.com/wp-content/uploads/2015/12/app-development-lifecycle.jpg",
+                fullpicture: "",
                 name: "WorkName",
                 client: "WorkClient"
             },
             {
                 section: "service-cloudservices",
                 thumpnail: "",
-                fullpicture: "https://www.supraits.com/wp-content/uploads/2018/01/Cloud-Computing-1.jpg",
+                fullpicture: "",
                 name: "WorkName",
                 client: "WorkClient"
             }
@@ -278,10 +278,70 @@ module.exports = {
 
         let products = [
             {
-                name:"Warehause App",
-                description:"",
+                name:"InvEasy",
+                description:"Es un software para automatizar, administrar, controlar y optimizar el inventario de tu negocio de manera rapida y eficiente, implementando las mejores practicas del Mercado. Este sistema te permite el control de inventarios, facturacion, compras, ventas, gastos y reportes, caja chica y seguridad.",
                 tag:"warehause",
-                pictures:["images/portfolio/full-project-1.jpg", "images/portfolio/full-project-2.jpg"],
+                pictures:["images/products/InvEasy.jpg"],
+                pricing: "../layouts/cloud_pricing.ejs",
+                stacks:[
+                    {
+                        tittle:"Basic",
+                        icon: "fa fa-leaf",
+                        list:["Inventory","Billing", "Security", "Receivables"],
+                        value:"",
+                        frequency:""
+                    },
+                    {
+                        tittle:"Intermediate",
+                        icon: "fa fa-paper-plane-o",
+                        list:["Inventory","Billing", "Security", "Receivables", "Accounts Payable", "Petty Cash"],
+                        value:"",
+                        frequency:""
+                    },
+                    {
+                        tittle:"Advanced",
+                        icon: "fa fa-fighter-jet",
+                        list:["Inventory","Billing", "Security", "Receivables", "Accounts Payable", "Petty Cash", "User Management", "Bank"],
+                        value:"",
+                        frequency:""
+                    },
+                ]
+            },
+            {
+                name:"HotelEasy",
+                description:"es un software para la gestion administrativa y control de hoteles de manera eficiente y optimizada enfocado en reservas de habitaciones, checkin, checkout ademas de las operaciones habituales.",
+                tag:"hotel",
+                pictures:["images/products/Hotel-Easy.jpg"],
+                pricing: "../layouts/cloud_pricing.ejs",
+                stacks:[
+                    {
+                        tittle:"Basic",
+                        icon: "fa fa-leaf",
+                        list:["Inventory","Billing", "Security", "Receivables"],
+                        value:"",
+                        frequency:""
+                    },
+                    {
+                        tittle:"Intermediate",
+                        icon: "fa fa-paper-plane-o",
+                        list:["Inventory","Billing", "Security", "Receivables", "Accounts Payable", "Petty Cash"],
+                        value:"",
+                        frequency:""
+                    },
+                    {
+                        tittle:"Advanced",
+                        icon: "fa fa-fighter-jet",
+                        list:["Inventory","Billing", "Security", "Receivables", "Accounts Payable", "Petty Cash", "User Management", "Bank"],
+                        value:"",
+                        frequency:""
+                    },
+                ]
+            },
+            {
+                name:"PrestEasy",
+                description:"es un sistema para pequeñas, medianas financieras y prestamistas independientes que sólo necesiten dos o 3 personas en frente del manejo y seguimiento de los préstamos.\nOfrece un formato de gestión de préstamo mucho más fácil y rápido en donde no es necesario someter y autorizar una solicitud antes de gestionar cada préstamo ni aprobar préstamos.\nContiene las herramientas necesarias para generar documentos legales de los pagareses notariales y actos de ventas gestionado por su abogado automatizados con flexibilidad de edición para mayor simpleza.",
+                tag:"prest",
+                pictures:["images/products/PrestEasy.jpg"],
                 pricing: "../layouts/cloud_pricing.ejs",
                 stacks:[
                     {

@@ -13,7 +13,7 @@
 
 
             <!-- Nav tabs -->
-            <ul class="nav nav-tabs tpl-alt-tabs font-alt pb-15 pb-sm-0">
+            <ul class="nav nav-tabs tpl-alt-tabs font-alt pb-15 pb-sm-0 mt-20">
                 <li class="active">
                     <a href='#<%= product.tag %>-details' data-toggle="tab">
 
@@ -50,12 +50,11 @@
                             <!-- Gallery -->
                             <div class="work-full-media mt-0 white-shadow">
                                 <ul class="clearlist work-full-slider owl-carousel">
+                                    <% product.pictures.forEach(function(picture, index, arry){ %>
                                     <li>
-                                        <img src="images/portfolio/full-project-1.jpg" alt="" />
+                                        <img src='<%= picture %>' alt="" />
                                     </li>
-                                    <li>
-                                        <img src="images/portfolio/full-project-2.jpg" alt="" />
-                                    </li>
+                                    <% }); %>
                                 </ul>
                             </div>
                             <!-- End Gallery -->
@@ -107,12 +106,11 @@
                             <!-- Gallery -->
                             <div class="work-full-media mt-0 white-shadow">
                                 <ul class="clearlist work-full-slider owl-carousel">
+                                    <% product.pictures.forEach(function(picture, index, arry){ %>
                                     <li>
-                                        <img src="images/portfolio/full-project-1.jpg" alt="" />
+                                        <img src='<%= picture %>' alt="" />
                                     </li>
-                                    <li>
-                                        <img src="images/portfolio/full-project-2.jpg" alt="" />
-                                    </li>
+                                    <% }); %>
                                 </ul>
                             </div>
                             <!-- End Gallery -->
