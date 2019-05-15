@@ -51,6 +51,10 @@ module.exports.datastores = {
     // adapter: 'sails-mysql',
     // url: 'mysql://user:password@host:port/database',
 
+    adapter: 'sails-firestore',
+    serviceAccount: require('./firebase-admin.json')
+
+
   },
 
 

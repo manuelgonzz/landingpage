@@ -6,7 +6,12 @@
  */
 
 module.exports = {
-    index: function (req, res) {
+    index: async function (req, res) {
+
+        // var records = await Team.find();
+
+        // console.log(records[0].socials);
+
         let sliderInfo = [
             {
                 h1Text: "Us",
@@ -25,63 +30,65 @@ module.exports = {
             },
         ];
 
-        let team = [
-            {
-                greeting: "Hello!",
-                postGreeting: "Devin Activo post gretting.",
-                name: "Manuel Gonzalez",
-                role: "SQA Automation Senior",
-                picture: "",
-                socials: [
-                    { account: "https://instagram.com/manuel.gonzz?utm_source=ig_profile_share&igshid=1pvm0u5vvnacv", icon: "fa fa-instagram" },
-                    { account: "https://www.linkedin.com/in/manuel-gonzalez-9b0066b1/", icon: "fa fa-linkedin" }
-                ]
-            },
-            {
-                greeting: "Hello!",
-                postGreeting: "Devin Activo post gretting.",
-                name: "Maximo De Leon",
-                role: "Senior Software Engineer",
-                picture: "",
-                socials: [
-                    { account: "https://instagram.com/max_lion?utm_source=ig_profile_share&igshid=1tf5zbsgm0z2k", icon: "fa fa-instagram" },
-                    { account: "https://www.linkedin.com/in/maximo-de-le%C3%B3n-4b614199/", icon: "fa fa-linkedin" }
-                ]
-            },
-            {
-                greeting: "Hello!",
-                postGreeting: "Devin Activo post gretting.",
-                name: "Edwin Frias",
-                role: "Software Developer",
-                picture: "https://media.licdn.com/dms/image/C5603AQG94epnYPTSMA/profile-displayphoto-shrink_800_800/0?e=1560988800&v=beta&t=3hbrzoMwlbWbqhacq_2vU6DXDGZusDwvBc2AWIAiVtk",
-                socials: [
-                    { account: "https://instagram.com/ing.edwinfrias?utm_source=ig_profile_share&igshid=etmy2c021hqb", icon: "fa fa-instagram" },
-                    { account: "https://www.linkedin.com/in/ing-edwin-frias-marte-0b580938/", icon: "fa fa-linkedin" }
-                ]
-            },
-            {
-                greeting: "Hello!",
-                postGreeting: "Devin Activo post gretting.",
-                name: "Eliezer De Leon",
-                role: "Software Developer",
-                picture: "https://media.licdn.com/dms/image/C5603AQFOu-ySQR5zfQ/profile-displayphoto-shrink_800_800/0?e=1560988800&v=beta&t=FfzbXBx3Lhv0ZNxT0BCEJPqLZqZWH1AeqXkMgBQM9eI",
-                socials: [
-                    { account: "https://instagram.com/eliezer.deleon?utm_source=ig_profile_share&igshid=i05iinh0li23", icon: "fa fa-instagram" },
-                    { account: "https://www.linkedin.com/in/eliezer-de-le%C3%B3n-106964159/", icon: "fa fa-linkedin" }
-                ]
-            },
-            {
-                greeting: "Hello!",
-                postGreeting: "Devin Activo post gretting.",
-                name: "Johnny Gil",
-                role: "Senior Mobile Developer",
-                picture: "https://media.licdn.com/dms/image/C5603AQEomupXGC5XCg/profile-displayphoto-shrink_800_800/0?e=1560988800&v=beta&t=I1Qby1mtJzMBsMIaT6ycEPS7Gc5CcsE6cKKIfrUISeM",
-                socials: [
-                    { account: "https://instagram.com/johnngil?utm_source=ig_profile_share&igshid=g9nngbrceitf", icon: "fa fa-instagram" },
-                    { account: "https://www.linkedin.com/in/johnny-gil-mejia-529582b9/", icon: "fa fa-linkedin" }
-                ]
-            },
-        ];
+        let team = await Team.find();
+
+        // let team = [
+        //     {
+        //         greeting: "Hello!",
+        //         postGreeting: "Devin Activo post gretting.",
+        //         name: "Manuel Gonzalez",
+        //         role: "SQA Automation Senior",
+        //         picture: "https://firebasestorage.googleapis.com/v0/b/devin-landingpage.appspot.com/o/team_pictures%2Fgonzz.jpg?alt=media&token=113cd62c-4f3b-4e7f-92b3-30cc84397d3d",
+        //         socials: [
+        //             { account: "https://instagram.com/manuel.gonzz?utm_source=ig_profile_share&igshid=1pvm0u5vvnacv", icon: "fa fa-instagram" },
+        //             { account: "https://www.linkedin.com/in/manuel-gonzalez-9b0066b1/", icon: "fa fa-linkedin" }
+        //         ]
+        //     },
+        //     {
+        //         greeting: "Hello!",
+        //         postGreeting: "Devin Activo post gretting.",
+        //         name: "Maximo De Leon",
+        //         role: "Senior Software Engineer",
+        //         picture: "https://firebasestorage.googleapis.com/v0/b/devin-landingpage.appspot.com/o/team_pictures%2Flion.jpg?alt=media&token=02b2fe8c-c57d-4c4c-a781-a7f056979c43",
+        //         socials: [
+        //             { account: "https://instagram.com/max_lion?utm_source=ig_profile_share&igshid=1tf5zbsgm0z2k", icon: "fa fa-instagram" },
+        //             { account: "https://www.linkedin.com/in/maximo-de-le%C3%B3n-4b614199/", icon: "fa fa-linkedin" }
+        //         ]
+        //     },
+        //     {
+        //         greeting: "Hello!",
+        //         postGreeting: "Devin Activo post gretting.",
+        //         name: "Edwin Frias",
+        //         role: "Software Developer",
+        //         picture: "https://media.licdn.com/dms/image/C5603AQG94epnYPTSMA/profile-displayphoto-shrink_800_800/0?e=1560988800&v=beta&t=3hbrzoMwlbWbqhacq_2vU6DXDGZusDwvBc2AWIAiVtk",
+        //         socials: [
+        //             { account: "https://instagram.com/ing.edwinfrias?utm_source=ig_profile_share&igshid=etmy2c021hqb", icon: "fa fa-instagram" },
+        //             { account: "https://www.linkedin.com/in/ing-edwin-frias-marte-0b580938/", icon: "fa fa-linkedin" }
+        //         ]
+        //     },
+        //     {
+        //         greeting: "Hello!",
+        //         postGreeting: "Devin Activo post gretting.",
+        //         name: "Eliezer De Leon",
+        //         role: "Software Developer",
+        //         picture: "https://media.licdn.com/dms/image/C5603AQFOu-ySQR5zfQ/profile-displayphoto-shrink_800_800/0?e=1560988800&v=beta&t=FfzbXBx3Lhv0ZNxT0BCEJPqLZqZWH1AeqXkMgBQM9eI",
+        //         socials: [
+        //             { account: "https://instagram.com/eliezer.deleon?utm_source=ig_profile_share&igshid=i05iinh0li23", icon: "fa fa-instagram" },
+        //             { account: "https://www.linkedin.com/in/eliezer-de-le%C3%B3n-106964159/", icon: "fa fa-linkedin" }
+        //         ]
+        //     },
+        //     {
+        //         greeting: "Hello!",
+        //         postGreeting: "Devin Activo post gretting.",
+        //         name: "Johnny Gil",
+        //         role: "Senior Mobile Developer",
+        //         picture: "https://media.licdn.com/dms/image/C5603AQEomupXGC5XCg/profile-displayphoto-shrink_800_800/0?e=1560988800&v=beta&t=I1Qby1mtJzMBsMIaT6ycEPS7Gc5CcsE6cKKIfrUISeM",
+        //         socials: [
+        //             { account: "https://instagram.com/johnngil?utm_source=ig_profile_share&igshid=g9nngbrceitf", icon: "fa fa-instagram" },
+        //             { account: "https://www.linkedin.com/in/johnny-gil-mejia-529582b9/", icon: "fa fa-linkedin" }
+        //         ]
+        //     },
+        // ];
 
         let navtabs = {
             tabs: [
@@ -278,92 +285,92 @@ module.exports = {
 
         let products = [
             {
-                name:"InvEasy",
-                description:"Es un software para automatizar, administrar, controlar y optimizar el inventario de tu negocio de manera rapida y eficiente, implementando las mejores practicas del Mercado. Este sistema te permite el control de inventarios, facturacion, compras, ventas, gastos y reportes, caja chica y seguridad.",
-                tag:"warehause",
-                pictures:["images/products/InvEasy.jpg"],
+                name: "InvEasy",
+                description: "Es un software para automatizar, administrar, controlar y optimizar el inventario de tu negocio de manera rapida y eficiente, implementando las mejores practicas del Mercado. Este sistema te permite el control de inventarios, facturacion, compras, ventas, gastos y reportes, caja chica y seguridad.",
+                tag: "warehause",
+                pictures: ["images/products/InvEasy.jpg"],
                 pricing: "../layouts/cloud_pricing.ejs",
-                stacks:[
+                stacks: [
                     {
-                        tittle:"Basic",
+                        tittle: "Basic",
                         icon: "fa fa-leaf",
-                        list:["Inventory","Billing", "Security", "Receivables"],
-                        value:"",
-                        frequency:""
+                        list: ["Inventory", "Billing", "Security", "Receivables"],
+                        value: "",
+                        frequency: ""
                     },
                     {
-                        tittle:"Intermediate",
+                        tittle: "Intermediate",
                         icon: "fa fa-paper-plane-o",
-                        list:["Inventory","Billing", "Security", "Receivables", "Accounts Payable", "Petty Cash"],
-                        value:"",
-                        frequency:""
+                        list: ["Inventory", "Billing", "Security", "Receivables", "Accounts Payable", "Petty Cash"],
+                        value: "",
+                        frequency: ""
                     },
                     {
-                        tittle:"Advanced",
+                        tittle: "Advanced",
                         icon: "fa fa-fighter-jet",
-                        list:["Inventory","Billing", "Security", "Receivables", "Accounts Payable", "Petty Cash", "User Management", "Bank"],
-                        value:"",
-                        frequency:""
+                        list: ["Inventory", "Billing", "Security", "Receivables", "Accounts Payable", "Petty Cash", "User Management", "Bank"],
+                        value: "",
+                        frequency: ""
                     },
                 ]
             },
             {
-                name:"HotelEasy",
-                description:"es un software para la gestion administrativa y control de hoteles de manera eficiente y optimizada enfocado en reservas de habitaciones, checkin, checkout ademas de las operaciones habituales.",
-                tag:"hotel",
-                pictures:["images/products/Hotel-Easy.jpg"],
+                name: "HotelEasy",
+                description: "es un software para la gestion administrativa y control de hoteles de manera eficiente y optimizada enfocado en reservas de habitaciones, checkin, checkout ademas de las operaciones habituales.",
+                tag: "hotel",
+                pictures: ["images/products/Hotel-Easy.jpg"],
                 pricing: "../layouts/cloud_pricing.ejs",
-                stacks:[
+                stacks: [
                     {
-                        tittle:"Basic",
+                        tittle: "Basic",
                         icon: "fa fa-leaf",
-                        list:["Inventory","Billing", "Security", "Receivables"],
-                        value:"",
-                        frequency:""
+                        list: ["Inventory", "Billing", "Security", "Receivables"],
+                        value: "",
+                        frequency: ""
                     },
                     {
-                        tittle:"Intermediate",
+                        tittle: "Intermediate",
                         icon: "fa fa-paper-plane-o",
-                        list:["Inventory","Billing", "Security", "Receivables", "Accounts Payable", "Petty Cash"],
-                        value:"",
-                        frequency:""
+                        list: ["Inventory", "Billing", "Security", "Receivables", "Accounts Payable", "Petty Cash"],
+                        value: "",
+                        frequency: ""
                     },
                     {
-                        tittle:"Advanced",
+                        tittle: "Advanced",
                         icon: "fa fa-fighter-jet",
-                        list:["Inventory","Billing", "Security", "Receivables", "Accounts Payable", "Petty Cash", "User Management", "Bank"],
-                        value:"",
-                        frequency:""
+                        list: ["Inventory", "Billing", "Security", "Receivables", "Accounts Payable", "Petty Cash", "User Management", "Bank"],
+                        value: "",
+                        frequency: ""
                     },
                 ]
             },
             {
-                name:"PrestEasy",
-                description:"es un sistema para pequeñas, medianas financieras y prestamistas independientes que sólo necesiten dos o 3 personas en frente del manejo y seguimiento de los préstamos.\nOfrece un formato de gestión de préstamo mucho más fácil y rápido en donde no es necesario someter y autorizar una solicitud antes de gestionar cada préstamo ni aprobar préstamos.\nContiene las herramientas necesarias para generar documentos legales de los pagareses notariales y actos de ventas gestionado por su abogado automatizados con flexibilidad de edición para mayor simpleza.",
-                tag:"prest",
-                pictures:["images/products/PrestEasy.jpg"],
+                name: "PrestEasy",
+                description: "es un sistema para pequeñas, medianas financieras y prestamistas independientes que sólo necesiten dos o 3 personas en frente del manejo y seguimiento de los préstamos.\nOfrece un formato de gestión de préstamo mucho más fácil y rápido en donde no es necesario someter y autorizar una solicitud antes de gestionar cada préstamo ni aprobar préstamos.\nContiene las herramientas necesarias para generar documentos legales de los pagareses notariales y actos de ventas gestionado por su abogado automatizados con flexibilidad de edición para mayor simpleza.",
+                tag: "prest",
+                pictures: ["images/products/PrestEasy.jpg"],
                 pricing: "../layouts/cloud_pricing.ejs",
-                stacks:[
+                stacks: [
                     {
-                        tittle:"Basic",
+                        tittle: "Basic",
                         icon: "fa fa-leaf",
-                        list:["Inventory","Billing", "Security", "Receivables"],
-                        value:"",
-                        frequency:""
+                        list: ["Inventory", "Billing", "Security", "Receivables"],
+                        value: "",
+                        frequency: ""
                     },
                     {
-                        tittle:"Intermediate",
+                        tittle: "Intermediate",
                         icon: "fa fa-paper-plane-o",
-                        list:["Inventory","Billing", "Security", "Receivables", "Accounts Payable", "Petty Cash"],
-                        value:"",
-                        frequency:""
+                        list: ["Inventory", "Billing", "Security", "Receivables", "Accounts Payable", "Petty Cash"],
+                        value: "",
+                        frequency: ""
                     },
                     {
-                        tittle:"Advanced",
+                        tittle: "Advanced",
                         icon: "fa fa-fighter-jet",
-                        list:["Inventory","Billing", "Security", "Receivables", "Accounts Payable", "Petty Cash", "User Management", "Bank"],
-                        value:"",
-                        frequency:""
+                        list: ["Inventory", "Billing", "Security", "Receivables", "Accounts Payable", "Petty Cash", "User Management", "Bank"],
+                        value: "",
+                        frequency: ""
                     },
                 ]
             },
