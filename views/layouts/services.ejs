@@ -60,7 +60,7 @@
                     </div>
                 </div>
                 <% if (section.pricing) { %>
-                <%- partial(section.pricing) %>
+                <%- partial(section.pricing, {stacks: section.stacks}) %>
                 <% } %>
             </div>
             <!-- End Service Item -->
