@@ -15,7 +15,7 @@
     "sails-firestore": "^0.1.1",
     "sails-hook-grunt": "^3.1.0",
     "sails-hook-orm": "^2.1.1",
-    "sails-hook-sockets": "^1.5.5"
+    "sails-hook-sockets": "^1.5.5",
     "async": "2.0.1",
     "flaverr": "1.1.1",
     "machine": "^15.0.0",
