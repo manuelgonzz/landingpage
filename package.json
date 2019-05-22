@@ -22,6 +22,7 @@
     "mongodb": "2.2.25",
     "qs": "6.4.0
   },
+  
   "devDependencies": {
     "@sailshq/eslint": "^4.19.3"
   },
