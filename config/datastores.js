@@ -50,9 +50,16 @@ module.exports.datastores = {
     ***************************************************************************/
     // adapter: 'sails-mysql',
     // url: 'mysql://user:password@host:port/database',
-
-    adapter: 'sails-firestore',
-    serviceAccount: require('./firebase-admin.json')
+// this is the default connection
+	localDiskDb: {
+		adapter: 'sails-disk'
+	},
+	
+	//custom connection for production
+	productionMongo: {
+		adapter: 'sails-mongo',
+		url: process.env.MONGODB_URI
+	}
 
 
   },
