@@ -52,13 +52,13 @@ module.exports.datastores = {
     // url: 'mysql://user:password@host:port/database',
 // this is the default connection
 	localDiskDb: {
-		adapter: 'sails-disk'
+		adapter: 'sails-disk',
 	},
 	
 	//custom connection for production
 	productionMongo: {
 		adapter: 'sails-mongo',
-		url: process.env.MONGODB_URI
+		url: process.env.MONGODB_URI,
 	}
 
 
