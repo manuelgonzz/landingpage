@@ -22,6 +22,7 @@
 module.exports = {
 
 
+  
   /**************************************************************************
   *                                                                         *
   * Tell Sails what database(s) it should use in production.                *
@@ -91,7 +92,7 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     migrate: 'safe',
-
+    connection: 'productionMongo',
     /***************************************************************************
     *                                                                          *
     * If, in production, this app has access to physical-layer CASCADE         *
