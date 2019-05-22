@@ -58,7 +58,7 @@ module.exports.datastores = {
 	//custom connection for production
 	productionMongo: {
 		adapter: 'sails-mongo',
-		url: process.env.MONGODB_URI,
+		url: process.env.MONGOLAB_PINK_URI,
 	}
 
 
