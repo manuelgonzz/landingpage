@@ -24,7 +24,7 @@
     "@sailshq/eslint": "^4.19.3"
   },
   "scripts": {
-    "start": "NODE_ENV=production node app.js node server.js",
+    "start": "NODE_ENV=production node app.js node server.js npm install -g sails-mongo",
     "test": "npm run lint && npm run custom-tests && echo 'Done.'",
     "lint": "eslint . --max-warnings=0 --report-unused-disable-directives && echo '✔  Your .js files look good.'",
     "custom-tests": "echo \"(No other custom tests yet.)\" && echo",
