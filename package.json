@@ -40,7 +40,6 @@
   "author": "maxlion",
   "license": "",
   "engines": {
-    "node": "0.10.15", 
-    "npm": ">= 1.4.0"
+    "node": "10.15"
   }
 }
