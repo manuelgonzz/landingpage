@@ -55,6 +55,9 @@ module.exports.datastores = {
 		adapter: 'sails-disk',
 	  url: process.env.MONGOLAB_PINK_URI,
   },
-
+ productionMongo: {
+		adapter: 'sails-mongo',
+		url: process.env.MONGOLAB_PINK_URI,
+	},
 
 };
