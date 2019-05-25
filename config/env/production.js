@@ -170,8 +170,8 @@ module.exports = {
   ***************************************************************************/
   session: {
     
-    adapter: 'sails-mongo',
-		url: process.env.MONGOLAB_PINK_URI,
+    adapter: 'connect-mongo',
+		url: process.env.MONGODB_URI
 
     /***************************************************************************
     *                                                                          *
