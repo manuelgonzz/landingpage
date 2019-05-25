@@ -1,9 +1,9 @@
 module.exports = {
 
 	// this is the default connection
-	localDiskDb: {
-		adapter: 'sails-disk'
-	},
+//	localDiskDb: {
+//		adapter: 'sails-disk'
+//	},
 	
 	//custom connection for production
 	productionMongo: {
