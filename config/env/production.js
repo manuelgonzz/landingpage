@@ -73,7 +73,7 @@ module.exports = {
       ****************************************************************************/
       // ssl: true,
       adapter: 'sails-firestore',
-      serviceAccount: require('./firebase-admin.json')
+      serviceAccount: require("./config/firebase-admin.json"),
     },
 
   },
