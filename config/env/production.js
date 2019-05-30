@@ -72,7 +72,8 @@ module.exports = {
       *                                                                           *
       ****************************************************************************/
       // ssl: true,
-
+      adapter: 'sails-firestore',
+      serviceAccount: require('./firebase-admin.json')
     },
 
   },
@@ -225,7 +226,7 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     cookie: {
-      // secure: true,
+       secure: true,
       maxAge: 24 * 60 * 60 * 1000,  // 24 hours
     },
 
@@ -254,10 +255,10 @@ module.exports = {
     * > Be sure to use the right protocol!  ("http://" vs. "https://")         *
     *                                                                          *
     ***************************************************************************/
-    // onlyAllowOrigins: [
-    //   'https://example.com',
+     onlyAllowOrigins: [
+       'https://landing-page-devin.herokuapp.com/',
     //   'https://staging.example.com',
-    // ],
+     ],
 
 
     /***************************************************************************
@@ -326,7 +327,7 @@ module.exports = {
     * (https://sailsjs.com/config/http)                                        *
     *                                                                          *
     ***************************************************************************/
-    // trustProxy: true,
+     trustProxy: true,
 
   },
 
