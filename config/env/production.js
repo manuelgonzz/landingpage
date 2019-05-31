@@ -22,7 +22,6 @@
 module.exports = {
 
 
-  
   /**************************************************************************
   *                                                                         *
   * Tell Sails what database(s) it should use in production.                *
@@ -73,7 +72,8 @@ module.exports = {
       ****************************************************************************/
       // ssl: true,
       adapter: 'sails-firestore',
-      serviceAccount: require("/app/config/firebase-admin.json"),
+      serviceAccount: require('./firebase-admin.json')
+
     },
 
   },
@@ -93,7 +93,7 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     migrate: 'safe',
-    connection: 'productionMongo',
+
     /***************************************************************************
     *                                                                          *
     * If, in production, this app has access to physical-layer CASCADE         *
@@ -170,9 +170,6 @@ module.exports = {
   *                                                                          *
   ***************************************************************************/
   session: {
-    
-    adapter: 'connect-mongo',
-		url: process.env.MONGODB_URI,
 
     /***************************************************************************
     *                                                                          *
@@ -226,7 +223,7 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     cookie: {
-       secure: true,
+      secure: true,
       maxAge: 24 * 60 * 60 * 1000,  // 24 hours
     },
 
@@ -255,10 +252,10 @@ module.exports = {
     * > Be sure to use the right protocol!  ("http://" vs. "https://")         *
     *                                                                          *
     ***************************************************************************/
-     onlyAllowOrigins: [
-       'https://landing-page-devin.herokuapp.com/',
-    //   'https://staging.example.com',
-     ],
+    onlyAllowOrigins: [
+      'https://landing-page-devin.herokuapp.com/',
+      // 'https://staging.example.com',
+    ],
 
 
     /***************************************************************************
@@ -327,7 +324,7 @@ module.exports = {
     * (https://sailsjs.com/config/http)                                        *
     *                                                                          *
     ***************************************************************************/
-     trustProxy: true,
+    trustProxy: true,
 
   },
 
