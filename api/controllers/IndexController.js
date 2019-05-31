@@ -46,8 +46,6 @@ module.exports = {
         let contact = contacts[0];
 
         let products = await Products.find();
-        
-        console.log("console: contact - ",contact);
       
         return res.view('pages/homepage', { sliderInfo, team, navtabs, portfolio, features, partners, contact, products });
     }
