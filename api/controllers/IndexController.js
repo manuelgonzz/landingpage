@@ -8,24 +8,6 @@
 module.exports = {
     index: async function (req, res) {
 
-        // let sliderInfo = [
-        //     {
-        //         h1Text: "Us",
-        //         h2Text: "Develop your ideas with",
-        //         image: "/images/slide/slide_glass_code.jpg"
-        //     },
-        //     {
-        //         h1Text: "Bussiness",
-        //         h2Text: "We innovate your",
-        //         image: "/images/full-width-images/mechanic_keyboard.jpg"
-        //     },
-        //     {
-        //         h1Text: "Amazing People",
-        //         h2Text: "Create amazing products with",
-        //         image: "/images/slide/code_alone.jpg"
-        //     },
-        // ];
-        
         let sliderInfo = await Sliders.find();
         
         let team = await Team.find();
