@@ -19,7 +19,7 @@
     "sails-mongo": "^1.0.0",
     "connect-mongo": "^2.0.0",
     "async": "2.0.1",
-    "mongodb": "2.2.25"
+    "mongodb": "3.6.1"
   },
   
   "devDependencies": {
